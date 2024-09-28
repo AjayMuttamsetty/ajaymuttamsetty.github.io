@@ -24,7 +24,7 @@
         header {
             background-color: #003366;
             color: white;
-            padding: 15px 20px;
+            padding: 20px 50px;
             position: fixed;
             width: 100%;
             top: 0;
@@ -35,20 +35,10 @@
             align-items: center;
         }
 
-        .menu-toggle {
-            display: none;
-            font-size: 1.5em;
-            cursor: pointer;
-        }
-
-        header nav {
-            display: flex;
-        }
-
         header nav a {
             color: #fff;
             text-decoration: none;
-            margin: 0 15px;
+            margin: 0 20px;
             font-weight: 500;
             transition: color 0.3s;
         }
@@ -57,31 +47,6 @@
             color: #ffcc00;
         }
 
-        @media (max-width: 768px) {
-            .menu-toggle {
-                display: block;
-            }
-
-            header nav {
-                display: none;
-                flex-direction: column;
-                background-color: #003366;
-                position: absolute;
-                top: 60px;
-                right: 0;
-                width: 100%;
-                padding: 10px;
-            }
-
-            header nav.active {
-                display: flex;
-            }
-
-            header nav a {
-                margin: 10px 0;
-                text-align: center;
-            }
-        }
 
         .hero {
             display: flex;
@@ -91,7 +56,7 @@
             height: 100vh;
             text-align: center;
             padding: 20px;
-            margin-top: 60px; /* Offset for the fixed header */
+            margin-top: 50px; /* Offset for the fixed header */
             animation: fadeIn 2s ease-in-out;
             background: linear-gradient(to bottom, #003366, #006699);
             color: #fff;
@@ -110,39 +75,42 @@
         .about-container {
             display: flex;
             align-items: center;
-            gap: 20px;
+            gap: 30px;
             background-color: #ffffff;
-            padding: 20px;
+            padding: 40px;
             border-radius: 15px;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
             max-width: 1000px;
-            margin: 20px auto;
+            margin: 40px auto;
             animation: fadeIn 2s ease-in-out;
-            flex-wrap: wrap;
         }
 
         .about-image {
             border-radius: 50%;
-            width: 150px;
-            height: 150px;
+            width: 180px;
+            height: 180px;
             object-fit: cover;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
         }
 
         .about-content {
             text-align: left;
-            font-size: 1em;
+            font-size: 1.1em;
             max-width: 700px;
         }
 
         .about-content h1 {
             color: #003366;
-            font-size: 2em;
+            font-size: 2.5em;
             margin-bottom: 10px;
         }
 
         .about-content p {
-            margin-bottom: 10px;
+            margin-bottom: 15px;
+            color: #003366;
+        }
+
+        .about-content ul li {
             color: #003366;
         }
 
@@ -152,33 +120,34 @@
         }
 
         .content-section {
-            padding: 40px 20px;
+            padding: 80px 20px;
             max-width: 1200px;
             margin: 0 auto;
             background-color: #ffffff;
             border-radius: 10px;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-            margin-top: 20px;
+            margin-top: 40px;
             animation: fadeIn 2s ease-in-out;
             text-align: center;
         }
 
         .content-section h2 {
             color: #003366;
-            font-size: 2em;
+            font-size: 2.5em;
             margin-bottom: 20px;
+            text-align: center;
         }
 
         .content-section p {
             line-height: 1.6;
-            font-size: 1em;
+            font-size: 1.1em;
             max-width: 800px;
             margin: 0 auto 20px;
         }
 
         .content-section img {
             width: 100%;
-            max-width: 400px;
+            max-width: 500px;
             border-radius: 10px;
             display: block;
             margin: 20px auto;
@@ -186,14 +155,15 @@
         }
 
         .linkedin {
-            margin-top: 20px;
+            margin-top: 40px;
+            text-align: center;
         }
 
         .linkedin a {
             text-decoration: none;
             color: #fff;
             background: #0077b5;
-            padding: 10px 15px;
+            padding: 15px 20px;
             border-radius: 5px;
             font-weight: bold;
             transition: background 0.5s;
@@ -205,8 +175,8 @@
 
         .experience-section {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-            gap: 15px;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
             margin-top: 20px;
             animation: fadeIn 2s ease-in-out;
         }
@@ -229,14 +199,13 @@
             padding: 20px 0;
             text-align: center;
             font-size: 0.9em;
-            margin-top: 20px;
+            margin-top: 40px;
         }
     </style>
 </head>
 
 <body>
     <header>
-        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
         <nav>
             <div>
                 <a href="#about">About Me</a>
@@ -252,27 +221,50 @@
             <img src="./Ajay.jpg" alt="Ajay Profile Picture" class="about-image">
             <div class="about-content">
                 <h1>Damodara Venkata Ajay Muttamsetty</h1>
-                <p>I'm an <span class="highlight">enthusiastic Mobile App Developer</span> adding technology and creativity.</p>
-                <p>Inspired by tech, I'm a <span class="highlight">Hybrid (iOS + Android + PWA) mobile app developer</span> (Ionic+Angular)...</p>
+                <p>I'm not the reason behind people looking into their phones but unfortunately, I am.</p>
+                <p>I'm an <span class="highlight">enthusiastic mobile app developer</span> adding technology and creativity.</p>
+                <p>Inspired by tech, I'm a <span class="highlight">Hybrid (iOS + Android + PWA) mobile app developer</span> (Ionic+Angular), who has worked on both enterprise and consumer applications with several integrations like:</p>
+                <p>Cordova In-App Purchase, Appsflyer Deep Linking, SSO, Google Analytics, Service Now
+                    SQLite,Firebase, Highcharts, Push Notifications, Language Translation, SharePoint with Graph APIs, SQLite and several other Capacitor and Cordova plugins</p>
+                <p>Besides mobile development, I have experience with JIRA, Service Now, Azure Repos, Azure Pipeline, White Source Bolt Report, Visual Studio Code, Xcode, Android Studio, and Source Tree.</p>
+                <p>I have complete knowledge of all Ionic frameworks, from Ionic 3 to the latest Ionic 7, and can migrate applications from older versions to Ionic 7.</p>
+                <p><em>I may not interact much with people, but my app does <span class="highlight">&lt;3</span></em></p>
             </div>
         </div>
     </section>
 
     <section id="college" class="content-section">
-        <h2><i class="fa fa-graduation-cap" style="font-size:48px;"></i> College Experience</h2>
-        <p>I survived late-night coding sessions, countless cups of coffee, and a few friendly battles...</p>
+        <h2>
+            <i style="font-size:48px" class="fa">&#xf19d;&nbsp</i>College Experience</h2>
+        <p>I survived late-night coding sessions, countless cups of coffee, and a few friendly battles with my professors to earn my Master of Science in Computer Science from Rowan University, New Jersey, in 2022. But before I leveled up in the U.S., I laid the foundation for my coding adventures with a Bachelor of Engineering in Computer Science from Sathyabama Institute of Science and Technology, Chennai, India, back in 2018—where my love for technology began, and my sleep schedule ended.</p>
         <img src="./AjayRowan.jpg" alt="Ajay at Rowan University">
     </section>
 
     <section id="experience" class="content-section">
         <h2>Professional Experience</h2>
-        <p>From 2018 to 2021, I was at Capgemini India, building apps with Ionic, Cordova, and Angular...</p>
+        <p>From 2018 to 2021, I was at Capgemini India, building apps with Ionic, Cordova, and Angular—turning caffeine and code into functional magic. Fast forward to 2023, I joined the amazing team at WeShape, California. Here, I'm still rocking Ionic (now with Capacitor and Angular 16), adding a touch of creativity, and pushing the limits of what mobile apps can do. Check out some of the screenshots below—crafted with passion, precision, and a sprinkle of awesomeness.</p>
         <div class="experience-section">
             <img src="./weshape1.PNG" alt="WeShape App Screen 1">
             <img src="./weshape2.PNG" alt="WeShape App Screen 2">
+            <img src="./weshape3.PNG" alt="WeShape App Screen 3">
+            <img src="./weshape4.PNG" alt="WeShape App Screen 4">
+            <img src="./weshape5.PNG" alt="WeShape App Screen 5">
+            <img src="./weshape6.PNG" alt="WeShape App Screen 6">
+            <img src="./weshape7.PNG" alt="WeShape App Screen 7">
             <!-- Additional images... -->
         </div>
     </section>
 
     <section id="contact" class="content-section" style="background: #f0f0f0;">
+        <h2>Contact Me</h2>
+        <p>Feel free to connect with me on LinkedIn to discuss opportunities or collaborations:</p>
+        <div class="linkedin">
+            <a href="https://www.linkedin.com/in/damodara-venkata-ajay-muttamsetty-068440139/" target="_blank">Connect on LinkedIn</a>
+        </div>
+    </section>
+    <footer>
+        &copy; 2024 Damodara Venkata Ajay Muttamsetty. All Rights Reserved.
+    </footer>
+</body>
+</html>
        
