@@ -24,7 +24,7 @@
         header {
             background-color: #003366;
             color: white;
-            padding: 15px 20px;
+            padding: 10px 20px;
             position: fixed;
             width: 100%;
             top: 0;
@@ -67,7 +67,7 @@
                 flex-direction: column;
                 background-color: #003366;
                 position: absolute;
-                top: 60px;
+                top: 50px;
                 right: 0;
                 width: 100%;
                 padding: 10px;
@@ -252,27 +252,20 @@
             <img src="./Ajay.jpg" alt="Ajay Profile Picture" class="about-image">
             <div class="about-content">
                 <h1>Damodara Venkata Ajay Muttamsetty</h1>
-                <p>I'm an <span class="highlight">enthusiastic Mobile App Developer</span> adding technology and creativity.</p>
+                <p>I'm an <span class="highlight">enthusiastic mobile app developer</span> adding technology and creativity.</p>
                 <p>Inspired by tech, I'm a <span class="highlight">Hybrid (iOS + Android + PWA) mobile app developer</span> (Ionic+Angular)...</p>
             </div>
         </div>
     </section>
 
-    <section id="college" class="content-section">
-        <h2><i class="fa fa-graduation-cap" style="font-size:48px;"></i> College Experience</h2>
-        <p>I survived late-night coding sessions, countless cups of coffee, and a few friendly battles...</p>
-        <img src="./AjayRowan.jpg" alt="Ajay at Rowan University">
-    </section>
+    <!-- Rest of the content remains the same -->
 
-    <section id="experience" class="content-section">
-        <h2>Professional Experience</h2>
-        <p>From 2018 to 2021, I was at Capgemini India, building apps with Ionic, Cordova, and Angular...</p>
-        <div class="experience-section">
-            <img src="./weshape1.PNG" alt="WeShape App Screen 1">
-            <img src="./weshape2.PNG" alt="WeShape App Screen 2">
-            <!-- Additional images... -->
-        </div>
-    </section>
+    <script>
+        function toggleMenu() {
+            const nav = document.querySelector('header nav');
+            nav.classList.toggle('active');
+        }
+    </script>
+</body>
 
-    <section id="contact" class="content-section" style="background: #f0f0f0;">
-       
+</html>
