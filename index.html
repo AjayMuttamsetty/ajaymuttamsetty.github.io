@@ -53,7 +53,7 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            height: 100vh;
+            /* height: 100vh; */
             text-align: center;
             padding: 20px;
             margin-top: 50px; /* Offset for the fixed header */
@@ -83,6 +83,10 @@
             max-width: 1000px;
             margin: 40px auto;
             animation: fadeIn 2s ease-in-out;
+
+            /* @media (max-width: 500px) {
+                margin-top: 200px;
+            } */
         }
 
         .about-image {
@@ -218,9 +222,13 @@
 
     <section class="hero" id="about">
         <div class="about-container">
-            <img src="./Ajay.jpg" alt="Ajay Profile Picture" class="about-image">
+           
             <div class="about-content">
+                <div style="text-align: center;">
+                <img src="./Ajay.jpg" alt="Ajay Profile Picture" class="about-image">
                 <h1>Damodara Venkata Ajay Muttamsetty</h1>
+                </div>
+                
                 <p>I'm not the reason behind people looking into their phones but unfortunately, I am.</p>
                 <p>I'm an <span class="highlight">enthusiastic Mobile App Developer</span> adding technology and creativity.</p>
                 <p>Inspired by tech, I'm a <span class="highlight">Hybrid (iOS + Android + PWA) mobile app developer</span> (Ionic, Angular and React Native), who has worked on both enterprise and consumer applications with several integrations like:</p>
@@ -251,7 +259,6 @@
             <img src="./weshape5.PNG" alt="WeShape App Screen 5">
             <img src="./weshape6.PNG" alt="WeShape App Screen 6">
             <img src="./weshape7.PNG" alt="WeShape App Screen 7">
-            <!-- Additional images... -->
         </div>
     </section>
 
